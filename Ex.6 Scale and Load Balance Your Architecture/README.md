@@ -1,10 +1,13 @@
 # Lab 6 – Scale and Load Balance Your Architecture
 
 ## Title
-
 Scale and Load Balance Your Architecture
-Author : your name   Reg no : yours   Date :
 
+Author : Bhuvaneshwaran TU
+
+Reg no : 212224040049
+
+Date :25.05.2026
 ---
 
 ## Objective
@@ -66,12 +69,25 @@ Students test the setup by generating traffic and observing automatic scaling an
 
 ## Workflow (To be filled by Student)
 
-Describe step-by-step how you performed this experiment in your own words.
+1. First, I reviewed the **existing EC2 architecture** created in the previous experiment.
+2. Then, I created a **Launch Template** by specifying the AMI, instance type, security group, and user data.
+3. After that, I created an **Auto Scaling Group** using the launch template and set the minimum, maximum, and desired number of instances.
+4. Next, I created an **Application Load Balancer** and configured a **target group** to route traffic to the EC2 instances.
+5. I attached the **Auto Scaling Group to the target group** so that the load balancer could distribute traffic to the instances.
+6. Then, I configured **scaling policies** based on CPU utilization using **Amazon CloudWatch alarms**.
+7. Finally, I tested the setup by generating traffic and observed **load balancing and automatic scaling of instances**.
 
 ---
 
 ## Output Screenshots 
 
+<img width="1919" height="993" alt="cc6 1" src="https://github.com/user-attachments/assets/e3cd3271-eaf5-4842-babd-2559143f15db" />
+
+
+<img width="1911" height="975" alt="cc6 2" src="https://github.com/user-attachments/assets/07b35673-70db-4f9d-8b05-9bbce40ff70b" />
+
+
+<img width="1919" height="985" alt="cc6 4" src="https://github.com/user-attachments/assets/218ea045-9830-4648-b320-ba24412462eb" />
 
 ---
 
